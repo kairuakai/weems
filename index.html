@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-EARN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <H1>WEEMS</H1>
+    <div class="loginPage">
+        <div class="form">
+            <form class="registerForm">
+                <input type="text" placeholder="Username" id="regUser">
+                <input type="password" placeholder="Password" id="regPass">
+                <input type="text" placeholder="Email Address">
+                <button onclick="create()">Create</button>
+                <p class="message">Already Registered? 
+                    <a href="#">Login</a>
+                </p>
+                <div class="login-icon">
+                    <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+            </form>
+            
+            <form class="loginForm" action="homepage.html">
+                <input type="text" placeholder="Username" id="username">
+                <input type="password" placeholder="Password" id="password">
+                <button onclick="validate()">Login</button>
+                <p class="message">Not Registered?
+                    <a href="#">Register</a>
+                </p>
+                <div class="login-icon">
+                <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js
+    "></script>
+
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height:"toggle",opacity: "toggle"},"slow");
+        });
+
+    </script>
+     <script src="https://kit.fontawesome.com/ef88416dbc.js" crossorigin="anonymous"></script>
+</body>
+</html>
